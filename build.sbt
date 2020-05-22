@@ -50,7 +50,7 @@ val scalatestplusScalacheckV = "3.1.2.0"
 lazy val commonSettings = Seq(
   organization := "dev.travisbrown",
   scalaVersion := "2.12.10",
-  crossScalaVersions := Seq("2.13.1", scalaVersion.value, "2.11.12", "0.22.0-RC1"),
+  crossScalaVersions := Seq("2.13.1", scalaVersion.value, "2.11.12", "0.24.0-RC1"),
   scalacOptions ++= (if (isDotty.value) Nil else Seq("-Yrangepos")),
   scalacOptions in (Compile, doc) ++= Seq(
     "-groups",
